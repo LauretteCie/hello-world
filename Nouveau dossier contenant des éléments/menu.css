@@ -1,0 +1,85 @@
+
+
+ /* Menu */
+
+ nav { 
+   display: flex;
+   justify-content: space-around;
+   border-top: solid 2px #44394b;
+   border-bottom: solid 2px #44394b;
+  }
+ 
+ ul.topnav { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: inline-block;
+    color: #44394b;;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+	font-family: "Roboto Condensed";
+	font-style: normal;
+	font-weight: 400;
+    font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: rgb(46, 12, 56); color:white;}
+
+ul.topnav li.icon {display: none;}
+
+.champs {
+  background-color: grey;
+  border: none;
+  color:rgb(197, 197, 197);
+  line-height: 30px;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.champs::placeholder {
+  color:white;
+  
+}
+
+form :nth-child(2){
+  width: 30px;
+  vertical-align: middle;
+}
+
+/* Responsive */
+
+@media screen and (max-width:480px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  form {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:480px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
