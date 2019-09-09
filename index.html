@@ -1,18 +1,69 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="fr">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="menu.css">
+<link href='https://fonts.googleapis.com/css?family=Pinyon+Script|Lora' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/stylesheet.css">
+<script src="https://kit.fontawesome.com/f854244dfc.js"></script>
+<link rel="stylesheet" href="/menu.css">
+<script src="menu.js"></script>
+<title>Société Shoes</title>
 
-<body>
-
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
+</head>   
+<body class="container">
+<header>
+<h1>shoes</h1>
+</header>
+<nav>
+	<ul class="topnav">
+		<li><a href="#item0">Accueil</a></li>
+		<li><a href="#item1">Talons</a></li>
+		<li><a href="#item2">Ballerines</a></li>
+		<li><a href="#item3">Bottines</a></li>
+		<li class="icon">
+		  <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+		</li>
+	</ul>
+<form>
+<input class="champs" type="text" placeholder="Recherchez un modèle">
+<input type="image" src="/picto/loupe.png" alt="Recherche" >
+</form>
+</nav>
+<main>
+	<div class="titre1">
+	  <div> <h2>Nous avons sélectionné pour vous</h2></div>
+	  <div> <h3>Votre panier contient : 2 articles</h3></div>
+	</div>
+	<div class="galerie">
+	  	<div class="ficheProduit">
+			<img src="/Img/velo1.jpg" alt="modèle chaussure 1">
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.</p>
+		</div>
+		<div class="ficheProduit">
+			<img src="/Img/monaco.jpg" alt="modèle chaussure 2">
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.</p>
+		</div>
+		<div class="ficheProduit">
+			<img src="/Img/velo2.jpg" alt="modèle chaussure 3">
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.</p>
+		</div>
+	</div>
+	<div class="reseauxDesk">
+		<i class="fab fa-twitter"></i>
+		<i class="fab fa-facebook"></i>
+	</div>
+</main>
+<footer>
+<div class="credit">
+<p>Mentions légales</p>
+<p>Crédit graphique<a href="www.sarahpom.com">www.sarahpom.com</a></p>
+<p>Crédit photgraphique<a href="www.olivier-placet.com">www.olivier-placet.com</a></p>
+</div>
+<div class="reseauMob">
+		<i class="fab fa-twitter reseauxMob"></i>
+		<i class="fab fa-facebook reseauxMob"></i>	
+</div>		
+</footer>
 </body>
 </html>
